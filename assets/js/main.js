@@ -16,6 +16,7 @@
 
 // owl-carousel
     $('.owl-carousel').owlCarousel({
+        autoplay: true,
         responsive:{
             0:{
                 items:1
