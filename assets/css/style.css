@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "brother"; }
+
+.container {
+  max-width: 1185px; }
+
+@font-face {
+  font-family: "brother";
+  src: url("../font/Brother-1816-Book.ttf"); }
+h1 {
+  font-size: 45px;
+  font-weight: 400; }
+
+h2 {
+  font-size: 35px;
+  font-weight: 400; }
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff; }
+
+p {
+  font-size: 19px; }
+
+a {
+  transition: 0.2s;
+  text-decoration: none !important; }
+
+.btn_shadow {
+  display: inline-block; }
+  .btn_shadow:hover {
+    box-shadow: inset 0px -5px 4px 0px #eeab05;
+    -moz-box-shadow: inset 0px -5px 4px 0px #eeab05;
+    -ms-box-shadow: inset 0px -5px 4px 0px #eeab05; }
+
+header {
+  background-color: #fffcfb; }
+  header .col-md-12 {
+    padding: 0; }
+    header .col-md-12 .menu {
+      height: 100px; }
+      header .col-md-12 .menu .header-logo {
+        width: 270px;
+        padding: 22px 0;
+        margin-right: 30px; }
+        header .col-md-12 .menu .header-logo img {
+          width: 100%; }
+      header .col-md-12 .menu .menu-list {
+        display: flex;
+        padding: 40px 0 0 0; }
+        header .col-md-12 .menu .menu-list .menu__item {
+          list-style: none;
+          margin: 0 10px; }
+          header .col-md-12 .menu .menu-list .menu__item .menu__link {
+            color: #000000; }
+            header .col-md-12 .menu .menu-list .menu__item .menu__link:hover {
+              color: #eeab05; }
+  header .owl-carousel .carousel-item {
+    background-image: url("../image/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 490px;
+    display: flex;
+    align-items: center; }
+    header .owl-carousel .carousel-item::before {
+      content: "";
+      background-image: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0) 100%);
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    header .owl-carousel .carousel-item .column-slider {
+      color: #ffffff;
+      padding: 0; }
+      header .owl-carousel .carousel-item .column-slider .column-slider__description {
+        margin: 20px 0 35px; }
+      header .owl-carousel .carousel-item .column-slider .btn__slider {
+        width: 130px;
+        height: 40px;
+        box-sizing: border-box;
+        padding: 7px 23px;
+        background-color: #eeab05;
+        font-size: 16px;
+        border-radius: 10px;
+        color: #000000;
+        transition: 0.3s;
+        z-index: 1; }
+        header .owl-carousel .carousel-item .column-slider .btn__slider:hover {
+          background-color: #ffca44; }
+  header .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 25px;
+    left: 48%; }
+    header .owl-carousel .owl-dots .owl-dot span {
+      background-color: #ffffff; }
+    header .owl-carousel .owl-dots .owl-dot.active span {
+      background-color: #eeab05 !important; }
+
+section.sectors {
+  background-color: #ededed;
+  padding-top: 55px;
+  padding-bottom: 70px; }
+  section.sectors .sectors__title {
+    margin-bottom: 55px;
+    text-align: center; }
+  section.sectors .column-sectors {
+    position: relative;
+    height: 350px;
+    padding: 0px 7px; }
+    section.sectors .column-sectors::before {
+      content: "";
+      display: block;
+      border: 20px solid transparent;
+      border-top: 20px solid #eeab05;
+      border-right: 20px solid #eeab05;
+      position: absolute;
+      right: 1.7%;
+      z-index: 1; }
+    section.sectors .column-sectors::after {
+      content: "+";
+      position: absolute;
+      top: -2px;
+      right: 10px;
+      z-index: 2;
+      font-size: 22px; }
+    section.sectors .column-sectors:hover::before {
+      border: 20px solid transparent;
+      border-top: 20px solid #000000;
+      border-right: 20px solid #000000; }
+    section.sectors .column-sectors:hover::after {
+      color: #ffffff; }
+    section.sectors .column-sectors img {
+      width: 100%;
+      height: 100%; }
+    section.sectors .column-sectors .sectors-solutions {
+      width: 96.5%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: 0.4s; }
+      section.sectors .column-sectors .sectors-solutions .sectors-solutions_hover {
+        display: none; }
+        section.sectors .column-sectors .sectors-solutions .sectors-solutions_hover p {
+          line-height: 21px;
+          color: #1d1d1d;
+          font-weight: 700; }
+        section.sectors .column-sectors .sectors-solutions .sectors-solutions_hover .btn__sectors {
+          width: 126px;
+          height: 37px;
+          background-color: #000000;
+          padding: 6px 9px;
+          border-radius: 10px;
+          color: #ffffff;
+          position: absolute;
+          bottom: 30px;
+          right: 30px; }
+      section.sectors .column-sectors .sectors-solutions:hover {
+        background-color: rgba(238, 171, 5, 0.7);
+        align-items: flex-start;
+        text-align: left; }
+        section.sectors .column-sectors .sectors-solutions:hover h3 {
+          display: none; }
+        section.sectors .column-sectors .sectors-solutions:hover .sectors-solutions_hover {
+          display: block;
+          padding: 0 35px;
+          margin-top: 40px; }
+
+section.about {
+  height: 410px;
+  background-image: url("../image/section-who.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  section.about .about__title, section.about .about__description {
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px; }
+  section.about .about__title {
+    margin: 45px 0 40px 0; }
+  section.about .column-price {
+    margin-top: 35px;
+    text-align: center; }
+    section.about .column-price .price__title {
+      color: #eeab05; }
+      section.about .column-price .price__title::after {
+        content: ",000"; }
+    section.about .column-price .price__title_plus::after {
+      content: "+"; }
+    section.about .column-price .price__description {
+      color: #ffffff;
+      margin: 0 0 40px 0; }
+  section.about .btn__price {
+    width: 150px;
+    height: 37px;
+    color: #000000;
+    background-color: #eeab05;
+    padding: 5px 0px;
+    margin-bottom: 40px;
+    border-radius: 10px; }
+    section.about .btn__price:hover {
+      background-color: #ffca44; }
+
+footer {
+  height: 90px;
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center; }
+  footer .social-block .social__links {
+    margin: 0 12px;
+    font-size: 28px;
+    color: #ffffff; }
+    footer .social-block .social__links:hover {
+      color: #eeab05; }
+  footer .footer-menu {
+    margin-left: 60px;
+    padding: 10px 0 0 0; }
+    footer .footer-menu ul {
+      display: flex; }
+      footer .footer-menu ul li {
+        list-style: none;
+        margin: 0 10px; }
+        footer .footer-menu ul li a {
+          color: #ffffff; }
+          footer .footer-menu ul li a:hover {
+            color: #eeab05; }
+  footer .website {
+    padding-top: 10px; }
+  footer p {
+    color: #ffffff;
+    font-size: 14px; }
+    footer p span {
+      color: #eeab05; }
+
+/*# sourceMappingURL=style.css.map */
